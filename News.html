@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cybersecurity News | NetWise</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="ExternalCSS.css">
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+       <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="Home.html">
+      <img src="https://img.icons8.com/ios-filled/50/38bdf8/cyber-security.png" width="35" alt="logo">NetWise
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+
+        <!-- Threats Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="threatsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Threats
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="threatsDropdown">
+            <li><a class="dropdown-item" href="Threats/Phishing.html">Phishing</a></li>
+            <li><a class="dropdown-item" href="Threats/Malware.html">Malware</a></li>
+            <li><a class="dropdown-item" href="Threats/SpamMessages.html">Spam Messages</a></li>
+            <li><a class="dropdown-item" href="Threats/PublicWifiRisk.html">Public WiFi Risk</a></li>
+            <li><a class="dropdown-item" href="Threats/Ransomware.html">Ransomware</a></li>
+            <li><a class="dropdown-item" href="Threats/FakeProfile.html">Fake Profiles</a></li>
+            <li><a class="dropdown-item" href="Threats/WeakPwd.html">Weak Passwords</a></li>
+            <li><a class="dropdown-item" href="Threats/FakeApp.html">Fake Apps</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="News.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="btn btn-glow ms-2" href="JoinCommunity.html">Join Community</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- BREAKING NEWS -->
+<div class="nw-breaking-bar">
+🚨 BREAKING: Cybercriminals exploit fake security alerts to steal login credentials worldwide
+</div>
+
+<div class="container my-5">
+
+<!-- Header & Search -->
+<div class="d-flex justify-content-between align-items-center mb-4 nw-news-header">
+    <div>
+        <h1>Cybersecurity News</h1>
+        <p>Latest verified reports on online threats & digital safety</p>
+    </div>
+
+    <div class="nw-search-wrapper position-relative">
+        <i class="bi bi-search nw-search-icon-inside"></i>
+        <input type="text"
+               id="nw-searchInput"
+               class="form-control nw-search-input"
+               placeholder="Search news..."
+               onkeyup="nwSearchNews()">
+    </div>
+</div>
+
+<!-- LEAD STORIES CAROUSEL -->
+<div id="nwLeadCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+               class="img-fluid rounded-4" alt="">
+        </div>
+        <div class="col-md-6">
+          <h2>Global Data Breach Exposes Millions of Online Accounts</h2>
+          <p>Stolen credentials are being sold on dark web forums. Experts urge users to enable 2FA.</p>
+          <p class="nw-news-meta">Source: Cybernews | Jan 26, 2026</p>
+          <a href="https://cybernews.com/security/billions-credentials-exposed-infostealers-data-leak/" target="_blank"
+             class="btn btn-primary btn-sm">Read full story</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+               class="img-fluid rounded-4" alt="">
+        </div>
+        <div class="col-md-6">
+          <h2>AI Voice Cloning Fuels New Phone Scams</h2>
+          <p>Criminals use AI to impersonate family members and demand urgent payments.</p>
+          <p class="nw-news-meta">Source: BusinessToday | Feb 1, 2026</p>
+          <a href="https://www.businesstoday.com.my/2025/08/23/phishing-attacks-surge-as-ai-and-deepfakes-fuel-new-wave-of-cybercrime/" target="_blank"
+             class="btn btn-primary btn-sm">Read full story</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1600267165477-6d4cc741b379"
+               class="img-fluid rounded-4" alt="">
+        </div>
+        <div class="col-md-6">
+          <h2>Malware Found Hidden in Free Mobile Apps</h2>
+          <p>Experts warn users to download apps only from trusted stores.</p>
+          <p class="nw-news-meta">Source: BleepingComputer | Jan 31, 2026</p>
+          <a href="https://www.bleepingcomputer.com/news/security/cellik-android-malware-builds-malicious-versions-from-google-play-apps/" target="_blank"
+             class="btn btn-primary btn-sm">Read full story</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#nwLeadCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#nwLeadCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- FILTER BUTTONS -->
+<div class="mb-4">
+<button class="btn nw-filter-btn active me-2" onclick="nwFilterNews('all', event)">All</button>
+<button class="btn nw-filter-btn me-2" onclick="nwFilterNews('scam', event)">Scams</button>
+<button class="btn nw-filter-btn me-2" onclick="nwFilterNews('breach', event)">Data Breaches</button>
+<button class="btn nw-filter-btn me-2" onclick="nwFilterNews('malware', event)">Malware</button>
+<button class="btn nw-filter-btn me-2" onclick="nwFilterNews('ai', event)">AI Threats</button>
+</div>
+
+<!-- NEWS GRID -->
+<div class="row g-4" id="nw-newsContainer"></div>
+
+</div>
+
+<footer class="footer py-4 ">
+  <div class="container-fluid">
+    <div class="row text-center text-md-start">
+
+      <!-- About -->
+      <div class="col-md-4 mb-3 px-4">
+        <h5 class="text-white fw-bold">NetWise</h5>
+        <p class="text-light small">
+          Community for Online Safety Awareness. Learn. Protect. Connect.
+        </p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-3 px-4">
+        <h5 class="text-white fw-bold">Contact Us</h5>
+        <ul class="list-unstyled text-light small">
+          <li>Email: <a href="mailto:info@netwise.com" class="text-info">info@netwise.com</a></li>
+          <li>Phone: <a href="tel:+1234567890" class="text-info">+95 792 263 241</a></li>
+          <li>Location: <span class="text-info">Mandalay, Myanmar</span></li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div class="col-md-4 mb-3 px-4">
+        <h5 class="text-white fw-bold">Follow Us</h5>
+        <div class="social-icons mt-2">
+          <a href="#" class="text-info me-3 fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-info me-3 fs-4"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-info me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-info fs-4"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-3 text-light small">
+      © 2026 NetWise · All rights reserved
+    </div>
+  </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const newsData = [
+  
+  {
+    title:"North Korean hackers using malicious QR codes in spear‑phishing",
+    desc:"FBI warns North Korean threat group Kimsuky is using QR code phishing (quishing) to steal credentials and bypass MFA.",
+    category:"ai",
+    date:"Jan 9, 2026",
+    source:"TechRadar / FBI Alert",
+    link:"https://www.techradar.com/pro/security/north-korean-hackers-using-malicious-qr-codes-in-spear-phishing-fbi-warns",
+    img:"https://cdn.mos.cms.futurecdn.net/5RooxZ4FxY5xmJBQJTbfUU-970-80.jpg.webp"
+  },
+  {
+    title:"FBI warns about quishing scam using malicious QR codes",
+    desc:"Hackers embed malicious QR codes in emails that lead to credential theft or malware downloads.",
+    category:"scam",
+    date:"Jan 9, 2026",
+    source:"Tom’s Guide / FBI Warning",
+    link:"https://www.tomsguide.com/computing/online-security/dont-scan-that-qr-code-fbi-warns-hackers-adding-malicious-qr-links-in-emails",
+    img:"https://cdn.mos.cms.futurecdn.net/6boMF6MBkfsfcKWhN3Z6gj-970-80.jpg.webp"
+  },
+  {
+    title:"Critical HPE OneView vulnerability exploited",
+    desc:"A maximum‑severity HPE OneView flaw (CVE‑2025‑37164) is being actively exploited; CISA urges patching.",
+    category:"vulnerability",
+    date:"Jan 8, 2026",
+    source:"SecurityWeek / Dark Reading",
+    link:"https://www.securityweek.com/critical-hpe-oneview-vulnerability-exploited-in-attacks/",
+    img:"https://www.securityweek.com/wp-content/uploads/2024/01/HPE-hacked.jpeg"
+  },
+  {
+    title:"Cyber‑enabled fraud one of the most pervasive threats",
+    desc:"World Economic Forum says cyber‑enabled fraud, including phishing, is a top global cyber risk.",
+    category:"fraud",
+    date:"Jan 12, 2026",
+    source:"World Economic Forum",
+    link:"https://www.weforum.org/press/2026/01/cyber-enabled-fraud-is-now-one-of-the-most-pervasive-global-threats-says-new-report-45dc3f679b/",
+    img:"https://cdnuploads.aa.com.tr/uploads/Contents/2026/01/12/thumbs_b_c_313ec6b8ff6584ed189ffd9f9e69863d.jpg?v=175040"
+  },
+  {
+    title:"HPE OneView RCE vulnerability lets attackers execute code",
+    desc:"Critical remote code execution bug in HPE OneView affects versions before 11.00.",
+    category:"vulnerability",
+    date:"Jan 12, 2026",
+    source:"CybersecurityNews",
+    link:"https://cybersecuritynews.com/hpe-oneview-software-vulnerability/",
+    img:"https://i3.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4gGQGH12LEqDwFfXIFFURnPO-YeCf4L2WUNUv-2IgqDub0tFABAnHApPCrLEzRdRG4RYqcdSkLYwSIEnB38nq0FKGT9yXX7T8eLpByP3UQHlInBi547GS5zBz_FuHCpNAZ6BqEyt1K_f9O-MSYKca0rk_fC_42WcIchdMPLg_msZjtlUdMhenzxEGY5A/s1600/HPE%20OneView%20Software%20Vulnerability%20Let%20Attackers%20Execute%20Remote%20Code%20%281%29.webp?w=696&resize=696,0&ssl=1"
+  },
+
+
+  {
+    title:"Cisco ISE and Citrix zero‑days abused by attackers",
+    desc:"Sophisticated threat actors exploited critical zero‑day vulnerabilities in Cisco ISE and Citrix to deploy custom malware. :contentReference[oaicite:3]{index=3}",
+    category:"malware",
+    date:"Dec 2025",
+    source:"TechRadar",
+    link:"https://www.techradar.com/pro/security/hackers-turn-cisco-and-citrix-zero-days-into-a-malware-nightmare",
+    img:"https://cdn.mos.cms.futurecdn.net/5RYCUPY3MrRkUECQECzDC-970-80.jpg.webp"
+  },
+  {
+    title:"Weekly Top Threats Roundup: MongoBleed & Ubisoft Hack",
+    desc:"Critical MongoDB vulnerability dubbed ‘MongoBleed’ was exploited affecting Ubisoft games and highlighting risks for other online platforms. :contentReference[oaicite:4]{index=4}",
+    category:"breach",
+    date:"Jan 5, 2026",
+    source:"ZWire Security",
+    link:"https://www.zwire.news/p/top-5-threat-news-dec-29-jan-5-2026-rainbow-six-hacked-twice-patient-portal-brea",
+    img:"https://images.unsplash.com/photo-1556761175-4b46a572b786"
+  },
+  {
+    title:"FBI alerts on quishing bypassing mobile security",
+    desc:"SecurityWeek reports the FBI says QR‑code phishing can allow attackers to bypass multi‑factor authentication and maintain access. :contentReference[oaicite:5]{index=5}",
+    category:"ai",
+    date:"Jan 9, 2026",
+    source:"SecurityWeek",
+    link:"https://www.securityweek.com/fbi-north-korean-spear-phishing-attacks-use-malicious-qr-codes/",
+    img:"https://images.unsplash.com/photo-1600267165477-6d4cc741b379"
+  },
+  {
+    title:"Chrome 0‑day patched after exploitation reports",
+    desc:"Google issued an emergency update to patch an actively exploited zero‑day in Chrome that could lead to arbitrary code execution.",
+    category:"vulnerability",
+    date:"Dec 2025",
+    source:"Cyberpress",
+    link:"https://cyberpress.org/chrome-0-day-flaw/",
+    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ4fR4mMXPkg2NCAYGh_CQdUHHTNMzphNOkGHmKYm6VfF6EEHOLoTbr5iOdXjlpWmmoixyOIisoaxqAogiZwZZoFUIL_Nkxe8g80ivEGQTmJ2o9ornvJcwkOt5JB-eBK5-A0sL-IPhSPVRd5VWia4A4jmntAiBDob6RGFA1Z7Jtf86Gbcjn-wVbzk0y3k/s1600/Critical%20Emby%20Server%20Vulnerability%20Let%20Attackers%20Gain%20Admin%20Access%20(1)%20(1)%20(1).webp"
+  },
+
+  {
+    title:"Ransomware analysts highlight growing cybercrime trends",
+    desc:"Security weeklies note ransomware and phishing remain top attack vectors, with evolving tactics leveraging AI and anonymous infrastructure.",
+    category:"malware",
+    date:"Jan 2026",
+    source:"Network Tigers",
+    link:"https://news.networktigers.com/cybersecurity-news/roundup-january-5‑2026",
+    img:"https://images.unsplash.com/photo-1518770660439-4636190af475"
+  },
+  {
+    title:"Chinese hackers target infrastructure attacks",
+    desc:"Reuters cybersecurity summaries report state‑linked groups launching attacks on critical infrastructure systems. ",
+    category:"malware",
+    date:"Jan 5, 2026",
+    source:"Reuters | Cyber Summary",
+    link:"https://www.reuters.com/technology/cybersecurity/",
+    img:"https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+  },
+  {
+    title:"ManageMyHealth patient data breach",
+    desc:"A healthcare portal breach exposed sensitive records of users in New Zealand, prompting investigation. (Related coverage: global health data breaches).",
+    category:"breach",
+    date:"Jan 5, 2026",
+    source:"Reuters | Health Data",
+    link:"https://www.reuters.com/technology/cybersecurity/",
+    img:"https://images.unsplash.com/photo-1584515933487-779824d29309"
+  },
+  {
+    title:"Security readiness challenges for governments",
+    desc:"Cybersecurity Dive highlights government concerns over infrastructure protection, staff shortages, and evolving threats.",
+    category:"infrastructure",
+    date:"Jan 10, 2026",
+    source:"Cybersecurity Dive",
+    link:"https://www.cybersecuritydive.com/news/cisa-7-biggest-challenges-2026/809088/",
+    img:"https://imgproxy.divecdn.com/FApmY3Rizxn7AYBeqMK0mOv31xGzh4AoAHwXq3USsRY/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9jaXNhX29mZmljZS5qcGc=.webp"
+  },
+  {
+    title:"CISA adds exploited vulnerabilities to KEV catalog",
+    desc:"CISA updates its Known Exploited Vulnerabilities catalog with several active risks requiring immediate patching.",
+    category:"vulnerability",
+    date:"Jan 7, 2026",
+    source:"CISA Official Alert",
+    link:"https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    img:"https://images.unsplash.com/photo-1542831371-d531d36971e6"
+  },
+  {
+    title:"Top cybersecurity risks to watch in 2026",
+    desc:"Guides highlight key risks, including AI‑augmented threats, supply chain risk, and infrastructure security gaps.",
+    category:"ai",
+    date:"Jan 9, 2026",
+    source:"Tom’s Guide",
+    link:"https://www.tomsguide.com/computing/online-security/from-misinformation-to-ai-powered-cyberattacks-the-top-cybersecurity-risks-for-2026",
+    img:"https://images.unsplash.com/photo-1518773553398-650c184e0bb3"
+  },
+  {
+    title:"Chinese hackers average millions of daily cyberattacks",
+    desc:"Analyses indicate state‑linked groups launch high‑volume attacks against multiple sectors daily.",
+    category:"malware",
+    date:"Jan 5, 2026",
+    source:"IPDefenseForum",
+    link:"https://ipdefenseforum.com/2026/01/chinas-daily-cyberattacks-on-taiwan-surpassed-2-6-million-in-2025-report-says/",
+    img:"https://ipdefenseforum.com/wp-content/uploads/2026/01/GettyImages-2201630077-780x470.jpg"
+  },
+  {
+    title:"Bitcoin ATM scams cost Americans $333M in 2025 (analysis)",
+    desc:"Crypto and ATM fraud losses reached high levels as scammers target older users and social engineering weaknesses.",
+    category:"fraud",
+    date:"Jan 7, 2026",
+    source:"Cybersecurity Roundup",
+    link:"https://social.cyware.com/cyber-dcr/daily-cybersecurity-roundup-january-07-2026-7609",
+    img:"https://images.unsplash.com/photo-1591696205602-2f950c417cb9"
+  }
+];
+
+
+function nwRenderNews(filter,search=""){
+    const c=document.getElementById("nw-newsContainer");
+    c.innerHTML="";
+    newsData.filter(n=>
+        (filter==="all"||n.category===filter) &&
+        n.title.toLowerCase().includes(search)
+    ).forEach(n=>{
+        c.innerHTML+=`
+        <div class="col-md-4">
+            <div class="nw-news-card">
+                <img src="${n.img}" class="img-fluid">
+                <div class="nw-p-3">
+                    <h5>${n.title}</h5>
+                    <p>${n.desc}</p>
+                    <p class="nw-news-meta">Source: ${n.source} | ${n.date}</p>
+                    <a href="${n.link}" target="_blank" class="text-primary">Read more</a>
+                </div>
+            </div>
+        </div>`;
+    });
+}
+
+function nwFilterNews(cat, e){
+    document.querySelectorAll(".nw-filter-btn").forEach(b=>b.classList.remove("active"));
+    e.currentTarget.classList.add("active");
+    nwRenderNews(cat);
+}
+
+function nwSearchNews(){
+    nwRenderNews("all",document.getElementById("nw-searchInput").value.toLowerCase());
+}
+
+nwRenderNews("all");
+</script>
+
+</body>
+</html>

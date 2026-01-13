@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home | NetWise</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="ExternalCSS.css">
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="Home.html">
+      <img src="https://img.icons8.com/ios-filled/50/38bdf8/cyber-security.png" width="35" alt="logo">NetWise
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+
+        <!-- Threats Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="threatsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Threats
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="threatsDropdown">
+            <li><a class="dropdown-item" href="Threats/Phishing.html">Phishing</a></li>
+            <li><a class="dropdown-item" href="Threats/Malware.html">Malware</a></li>
+            <li><a class="dropdown-item" href="Threats/SpamMessages.html">Spam Messages</a></li>
+            <li><a class="dropdown-item" href="Threats/PublicWifiRisk.html">Public WiFi Risk</a></li>
+            <li><a class="dropdown-item" href="Threats/Ransomware.html">Ransomware</a></li>
+            <li><a class="dropdown-item" href="Threats/FakeProfile.html">Fake Profiles</a></li>
+            <li><a class="dropdown-item" href="Threats/WeakPwd.html">Weak Passwords</a></li>
+            <li><a class="dropdown-item" href="Threats/FakeApp.html">Fake Apps</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="News.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="btn btn-glow ms-2" href="JoinCommunity.html">Join Community</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="row align-items-center">
+      <div class="col-md-7 text-md-start text-center">
+        <h1 class="display-4 fw-bold reveal">
+          Be <span class="text-info">Wise</span> on the Net
+        </h1>
+        <p class="lead mt-3 reveal">
+          Smart, Secure, and Ready — Learn How to Protect Yourself Online.
+        </p>
+        <div class="hero-badges mt-4 reveal">
+          <span>Cyber Safety</span>
+          <span>Privacy</span>
+          <span>Awareness</span>
+        </div>
+        <a href="#quiz-section" class="btn btn-glow mt-4">
+          Start Quiz
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Why Online Safety Matters  -->
+<section class="py-5 reveal" style="background: linear-gradient(135deg, rgba(15,23,42,0.95), rgba(10,15,46,0.95));">
+  <div class="container">
+
+  
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-white reveal">
+        Why Online Safety <span class="text-info">Matters</span>
+      </h2>
+      <p class="lead text-light mt-3 reveal">
+        One click. One post. One mistake.  
+        <br class="d-none d-md-block">
+        That’s all it takes to put your digital life at risk.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="glass-card h-100 reveal text-center">
+          <div class="mb-3 fs-1">🔐</div>
+          <h5><strong>Personal Data at Risk</strong></h5>
+          <p class=" small matter">
+            Passwords, photos, and private messages can be stolen and misused without your knowledge.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="glass-card h-100 reveal text-center">
+          <div class="mb-3 fs-1">💸</div>
+          <h5><strong>Scams Cause Real Loss</strong></h5>
+          <p class=" small matter">
+            Online scams can steal money, accounts, and personal information in seconds.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="glass-card h-100 reveal text-center">
+          <div class="mb-3 fs-1">🧠</div>
+          <h5><strong>Mental & Social Harm</strong></h5>
+          <p class="small matter">
+            Cyberbullying, pressure, and fake news can damage confidence and mental health.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="glass-card h-100 reveal text-center">
+          <div class="mb-3 fs-1">⚠️</div>
+          <h5><strong>One Mistake Is Enough</strong></h5>
+          <p class=" small matter ">
+            A single bad link or app can give attackers access to your entire device.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5 reveal">
+      <p class="fw-semibold text-light fs-5">
+        Online safety isn’t about fear —  
+        <span class="text-info">it’s about awareness.</span>
+      </p>
+      <p class="text-light">
+        <strong>NetWise</strong> helps you spot risks early and build safer online habits.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Empowering Section -->
+<section class="empowering-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-white">
+        <h2 class="fw-bold reveal">
+          Empowering <span id="rotate-text" class="text-info">Students</span>
+        </h2>
+        <p class="lead mt-3 reveal" id="empower-subtext ">
+          To explore, learn, and stay protected in the digital world
+        </p>
+      </div>
+      <div class="col-md-6 text-center reveal">
+        <img id="empower-img" src="https://i.pinimg.com/1200x/d0/e6/34/d0e6343a8f0bf8eefd057bda92096188.jpg" alt="Empower Image" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="container my-5">
+
+<!-- Daily Safety Tip -->
+<section class="daily-tips-section py-5 reveal">
+  <div class="container">
+    <h3 class="text-white mb-4 reveal">💡 Daily Safety Tips</h3>
+
+    <div class="marquee">
+      <div class="marquee-content reveal">
+        <div class="tip-card">Use strong, unique passwords for each account.</div>
+        <div class="tip-card">Never share OTPs or verification codes.</div>
+        <div class="tip-card">Check URLs carefully before clicking links.</div>
+        <div class="tip-card">Adjust privacy settings on social media.</div>
+        <div class="tip-card">Think before posting personal info online.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- Threats Section -->
+<section class="threats-section py-5 reveal">
+  <div class="container">
+    <h3 class="text-white mb-4">☠️ Common Online Threats</h3>
+    <div class="threats-scroll d-flex gap-3 overflow-auto">
+
+      <!-- Threat Item 1 -->
+      <div class="glass-card threat-card p-3 flex-shrink-0 reveal ">
+        <img src="https://img.icons8.com/ios-filled/50/38bdf8/email.png" alt="Phishing Icon">
+        <h5>Phishing Attacks</h5>
+        <p>Scammers trick users into revealing sensitive info. Learn how to avoid them.</p>
+        <a href="Threats/Phishing.html" class="btn btn-glow btn-sm mt-2">Learn More</a>
+      </div>
+
+      <!-- Threat Item 2 -->
+      <div class="glass-card threat-card p-3 flex-shrink-0 reveal ">
+        
+        <img src="https://img.icons8.com/ios-filled/50/38bdf8/bug.png
+" alt="Malware Icon">
+        <h5>Malware</h5>
+        <p>Malicious software that harms devices or steals data. Stay protected.</p>
+        <a href="Threats/Malware.html" class="btn btn-glow btn-sm mt-2">Learn More</a>
+      </div>
+
+      <!-- Threat Item 3 -->
+      <div class="glass-card threat-card p-3 flex-shrink-0 reveal  ">
+        <img src="https://img.icons8.com/ios-filled/50/38bdf8/spam.png" alt="Spam Icon">
+        <h5>Spam & Scam Messages</h5>
+        <p>Unsolicited messages can contain scams or phishing links. Be cautious.</p>
+        <a href="Threats/SpamMessages.html" class="btn btn-glow btn-sm mt-2">Learn More</a>
+      </div>
+      <!-- Threat Item 4 -->
+      <div class="glass-card threat-card p-3 flex-shrink-0 reveal ">
+        <img src="https://img.icons8.com/ios-filled/50/38bdf8/network.png" alt="Wi-Fi Security Icon">
+        <h5>Public Wi-Fi Risks</h5>
+        <p>Unsecured networks can be exploited to steal your data. Use VPNs.</p>
+        <a href="Threats/PublicWifiRisk.html" class="btn btn-glow btn-sm mt-2">Learn More</a>
+      </div>
+
+
+
+      <!-- Threat Item 5 -->
+      <div class="glass-card threat-card p-3 flex-shrink-0 reveal ">
+        <img src="https://img.icons8.com/ios-filled/50/38bdf8/virus.png" alt="Ransomware Icon">
+        <h5>Ransomware</h5>
+        <p>Ransomware can lock your files and demand payment. Avoid suspicious links.</p>
+        <a href="Threats/Ransomware.html" class="btn btn-glow btn-sm mt-2">Learn More</a>
+      </div>
+
+      <!-- Threat Item 6 -->
+      <div class="glass-card threat-card p-3 flex-shrink-0 reveal ">
+        <img src="https://img.icons8.com/ios-filled/50/38bdf8/theatre-mask.png
+" alt="Fake Profile Icon">
+
+        <h5>Fake Profiles & Impersonation</h5>
+        <p>Scammers pretend to be people or brands you know.</p>
+        <a href="Threats/FakeProfile.html" class="btn btn-glow btn-sm mt-2">Learn More</a>
+      </div>
+
+      <!-- Threat Item 7 -->
+      <div class="glass-card threat-card p-3 flex-shrink-0 reveal ">
+        <img src="https://img.icons8.com/ios-filled/50/38bdf8/password.png
+" alt="Weak Password Icon">
+        <h5>Weak or Reused Passwords</h5>
+        <p>Simple or repeated passwords are easy to hack.</p>
+        <a href="Threats/WeakPwd.html" class="btn btn-glow btn-sm mt-2">Learn More</a>
+      </div>
+
+      <!-- Threat Item 8 -->
+      <div class="glass-card threat-card p-3 flex-shrink-0 reveal ">
+        <img src="https://img.icons8.com/ios-filled/50/38bdf8/phishing.png" alt="Fake Apps Icon">
+        <h5>Fake Apps & Downloads</h5>
+        <p>Downloading apps from unknown sources can compromise your security.</p>
+        <a href="Threats/FakeApp.html" class="btn btn-glow btn-sm mt-2">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Quiz Section -->
+<div class="glass-card quiz-container reveal" id="quiz-section">
+<h4 class="mb-3 reveal">🧠 Check Your Online Safety Knowledge</h4>
+<div class="quiz-progress">
+<div class="quiz-progress-inner" id="progress-bar"></div>
+</div>
+<div id="quiz-question"></div>
+<button class="btn btn-glow mt-3" id="next-btn" onclick="nextQuestion()">Next</button>
+<div id="quiz-result" class="mt-4 text-center" style="display:none;">
+<div class="result-circle" id="result-circle"></div>
+<p id="result-text" class="mt-2"></p>
+</div>
+</div>
+
+<!-- CTA Section -->
+<section class="cta-section reveal">
+  <h3 class="text-info mb-3 reveal">Join Our Community</h3>
+  <p class="text-light mb-4 reveal">Learn, share tips, and stay updated with the latest online safety news.</p>
+  <a href="JoinCommunity.html" class="btn btn-glow btn-lg">Join Now</a>
+</section>
+
+<!-- Stats Section -->
+<div class="stats row text-center mb-5 reveal">
+<div class="col-md-4">
+<div class="glass-card reveal">
+<p class="stat-number">500+</p>
+<p>Users Tested Safe</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="glass-card reveal">
+<p class="stat-number">200+</p>
+<p>Daily Tips Shared</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="glass-card reveal">
+<p class="stat-number">100+</p>
+<p>Community Members</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<footer class="footer py-4 ">
+  <div class="container-fluid">
+    <div class="row text-center text-md-start">
+
+      <!-- About -->
+      <div class="col-md-4 mb-3 px-4">
+        <h5 class="text-white fw-bold">NetWise</h5>
+        <p class="text-light small">
+          Community for Online Safety Awareness. Learn. Protect. Connect.
+        </p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-3 px-4">
+        <h5 class="text-white fw-bold">Contact Us</h5>
+        <ul class="list-unstyled text-light small">
+          <li>Email: <a href="mailto:info@netwise.com" class="text-info">info@netwise.com</a></li>
+          <li>Phone: <a href="tel:+1234567890" class="text-info">+95 792 263 241</a></li>
+          <li>Location: <span class="text-info">Mandalay, Myanmar</span></li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div class="col-md-4 mb-3 px-4">
+        <h5 class="text-white fw-bold">Follow Us</h5>
+        <div class="social-icons mt-2">
+          <a href="#" class="text-info me-3 fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-info me-3 fs-4"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-info me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-info fs-4"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-3 text-light small">
+      © 2026 NetWise · All rights reserved
+    </div>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+  // Empowering rotating text & images
+const words = ["Students", "Teenagers", "Parents", "Educators"];
+const images = [
+  "https://i.pinimg.com/1200x/d0/e6/34/d0e6343a8f0bf8eefd057bda92096188.jpg",
+  "https://www.newportacademy.com/wp-content/uploads/NA-Website-Resources-Image-EffectsSocialMedia-1386x640-Hero.jpg",
+  "https://i.pinimg.com/1200x/f7/de/d7/f7ded7bbe79c0670e297e07c4dfcd74b.jpg",
+  "https://i.pinimg.com/1200x/6f/c4/a0/6fc4a0254f94ef6b52e1bbf39d50fbd2.jpg"
+];
+let wordIndex = 0; let charIndex = 0; let isDeleting = false;
+const typingSpeed = 120; const deletingSpeed = 80; const pauseTime = 1200;
+const textEl = document.getElementById("rotate-text"); const imgEl = document.getElementById("empower-img");
+
+function typeEffect() {
+  const currentWord = words[wordIndex];
+  if(!isDeleting){
+    if(charIndex===0) imgEl.src = images[wordIndex];
+    textEl.innerText = currentWord.substring(0, charIndex+1); charIndex++;
+    if(charIndex===currentWord.length){ setTimeout(()=>isDeleting=true,pauseTime);}
+  } else {
+    textEl.innerText = currentWord.substring(0,charIndex-1); charIndex--;
+    if(charIndex===0){ isDeleting=false; wordIndex=(wordIndex+1)%words.length;}
+  }
+  setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
+}
+typeEffect();
+
+
+// Quiz
+const quiz = [
+{q:"What should you do before clicking a suspicious link?", options:["Click immediately","Verify the source first","Forward to friend"], answer:1},
+{q:"What is 2FA?", options:["Two-factor authentication","Fast login","File transfer app"], answer:0},
+{q:"What is phishing?", options:["Email scam","Strong password","Firewall tool"], answer:0},
+{q:"Should you share passwords?", options:["Yes","No","Sometimes"], answer:1},
+{q:"Public Wi-Fi is safe without precautions?", options:["Yes","No","Only with VPN"], answer:2},
+{q:"Is installing unknown apps safe?", options:["Yes","No","Sometimes"], answer:1},
+{q:"Should you post personal info online?", options:["Yes","No","Depends"], answer:1},
+{q:"What is malware?", options:["Malicious software","Security patch","VPN"], answer:0},
+{q:"Is social engineering a threat?", options:["Yes","No","Only offline"], answer:0},
+{q:"Should you update software regularly?", options:["Yes","No","Sometimes"], answer:0}
+];
+
+let currentQ=0; let score=0;
+function showQuestion(){
+const q = quiz[currentQ];
+let html = `<p class="fw-semibold">${q.q}</p>`;
+q.options.forEach((opt,i)=>{ html += `<div class="form-check">
+<input class="form-check-input" type="radio" name="quizOpt" value="${i}" id="opt${i}">
+<label class="form-check-label" for="opt${i}">${opt}</label>
+</div>`; });
+document.getElementById("quiz-question").innerHTML = html;
+document.getElementById("progress-bar").style.width = ((currentQ)/quiz.length*100) + "%";
+}
+function nextQuestion(){
+const opts = document.getElementsByName("quizOpt");
+let selected = -1;
+for(let o of opts){ if(o.checked) selected = parseInt(o.value);}
+if(selected===-1){ alert("Please select an option"); return;}
+if(selected === quiz[currentQ].answer) score++;
+currentQ++;
+if(currentQ<quiz.length){ showQuestion(); }else{ showResult(); }
+}
+function showResult(){
+document.getElementById("quiz-question").style.display="none";
+document.getElementById("next-btn").style.display="none";
+document.getElementById("quiz-result").style.display="block";
+document.getElementById("progress-bar").style.width="100%";
+const percent = Math.round((score/quiz.length)*100);
+const circle = document.getElementById("result-circle");
+circle.innerText = `${percent}%`;
+let level = "";
+if(percent>=80) level="Expert";
+else if(percent>=50) level="Intermediate";
+else level="Beginner";
+document.getElementById("result-text").innerText = `Your Knowledge Level: ${level}`;
+}
+showQuestion();
+
+
+
+
+// Daily Safety Tip
+const tips = [
+"Use strong, unique passwords for each account.",
+"Never share OTPs or verification codes.",
+"Check URLs carefully before clicking links.",
+"Adjust privacy settings on social media.",
+"Think before posting personal info online."
+];
+
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+  (entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        obs.unobserve(entry.target); 
+      }
+    });
+  },
+  {
+    threshold: 0.12,
+    rootMargin: "0px 0px -50px 0px"
+  }
+);
+
+
+revealElements.forEach(el => {
+  observer.observe(el);
+  if (el.getBoundingClientRect().top < window.innerHeight) {
+    el.classList.add("show");
+  }
+});
+
+
+</script>
+</body>
+</html>
